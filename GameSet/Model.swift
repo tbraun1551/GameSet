@@ -31,15 +31,34 @@ struct SetModel {
 			deck.append(Card(isSelected: false, numberOfSymbols: face.1, color: face.2, content: face.0, id: cardIndex))
 		}
 //		deck.shuffle()
-	
-		for _ in 0..<12 { //Deals the 12 initial card
-			dealtCards.append(deck.removeFirst())
-		}
 		isGameOn = true
 		score = 0
 	}
 	
 	//MARK: - Functions
+	mutating func dealCards() {
+		deal(12)
+	}
+	
+	
+	
+	mutating func dealThreeCards() {
+		deal(3)
+	}
+	
+	mutating func deal(_ numberOfCards: Int) {
+		for _ in 0..<numberOfCards {
+			if deck.count > 0 {
+				dealtCards.append(deck.removeFirst())
+			}
+		}
+	}
+	
+	mutating func deal() {
+		if deck.count > 0 {
+			dealtCards.append(deck.removeFirst())
+		}
+	}
 	mutating func choose(_ card: Card) {
 		if numberOfChosenCards >= 3 { checkForSet() }
 		if let chosenIndex: Int = dealtCards.firstIndex(matching: card) {
@@ -48,15 +67,9 @@ struct SetModel {
 			print(numberOfChosenCards)
 		}
 	}
-	
-	mutating func dealThreeCards() {
-		if deck.count > 0 {
-			for _ in 0..<3 {
-				dealtCards.append(deck.removeFirst())
-			}
-		}
+	mutating func d() {
+		dealtCards.append(deck.removeFirst())
 	}
-	
 	
 	//MARK: - Functions that check for set
 	
@@ -79,6 +92,7 @@ struct SetModel {
 			matchedCards.append(card)
 		}
 		score += 1
+		dealThreeCards()
 	}
 	mutating func setNotCreated() {
 		for card in chosenCards {
@@ -97,7 +111,6 @@ struct SetModel {
 	//MARK: - Card Structure
 	struct Card: Identifiable  {
 		var isSelected: Bool = false
-		
 		var numberOfSymbols: Int
 		var color: Color
 		var content: CardContent

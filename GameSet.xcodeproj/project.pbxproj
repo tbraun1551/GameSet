@@ -28,6 +28,7 @@
 		977592AC24A3F22200F3FD9B /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977592A924A3F22200F3FD9B /* Color+Extension.swift */; };
 		977592AD24A3F22200F3FD9B /* Array+Only.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977592A824A3F22200F3FD9B /* Array+Only.swift */; };
 		977592B324A40A6D00F3FD9B /* CardContentProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 977592B224A40A6D00F3FD9B /* CardContentProtocol.swift */; };
+		97F38C6B24AB05BE00EA7E5F /* Locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F38C6A24AB05BE00EA7E5F /* Locations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		977592A924A3F22200F3FD9B /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		977592AA24A3F22200F3FD9B /* Array+Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Identifiable.swift"; sourceTree = "<group>"; };
 		977592B224A40A6D00F3FD9B /* CardContentProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardContentProtocol.swift; sourceTree = "<group>"; };
+		97F38C6A24AB05BE00EA7E5F /* Locations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locations.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 			children = (
 				976ADD0024A3DF650061EAAB /* GameSetApp.swift */,
 				976ADD3724A3E1760061EAAB /* SetGameView.swift */,
+				97F38C6A24AB05BE00EA7E5F /* Locations.swift */,
 				976ADD3924A3E1830061EAAB /* SetViewModel.swift */,
 				976ADD3324A3E1380061EAAB /* Model.swift */,
 				976ADD3024A3DF960061EAAB /* CardContent.swift */,
@@ -343,6 +346,7 @@
 				977592A724A3F1F600F3FD9B /* Squiggle.swift in Sources */,
 				976ADD3224A3DF960061EAAB /* CardContent.swift in Sources */,
 				976ADD3824A3E1760061EAAB /* SetGameView.swift in Sources */,
+				97F38C6B24AB05BE00EA7E5F /* Locations.swift in Sources */,
 				976ADD3124A3DF960061EAAB /* Cardify.swift in Sources */,
 				977592A224A3F1DA00F3FD9B /* Diamond.swift in Sources */,
 				976ADD2E24A3DF8D0061EAAB /* Grid.swift in Sources */,

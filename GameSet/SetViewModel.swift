@@ -32,6 +32,7 @@ class SetViewModel: ObservableObject {
 	
 	func createNewGame() {
 		model = SetViewModel.createSetGame()
+		model.dealCards()
 	}
 	
 	
@@ -55,5 +56,11 @@ class SetViewModel: ObservableObject {
 	}
 	func dealThreeCards() {
 		model.dealThreeCards()
+	}
+	func dealCards() {
+		model.dealCards()
+	}
+	func deal() {
+		model.deal()
 	}
 }
